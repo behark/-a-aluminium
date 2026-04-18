@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #2BAEE6;
+  --color-primary-dark: #1D8EBE;
+  --color-secondary: #E5E7EB;
+  --color-accent: #0B0B0D;
+  --color-ink: #0F1115;
+  --color-ink-soft: #1A1D23;
+  --color-muted: #6B7280;
+  --color-cream: #F7F8FA;
+  --color-steel: #E6E9EE;
+  --color-hairline: #D7DCE3;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  scroll-margin-top: 5rem;
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.hairline {
+  border-color: var(--color-hairline);
+}
+
+.grid-lines {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@keyframes kenburns {
+  0%   { transform: scale(1.05) translate3d(0, 0, 0); }
+  100% { transform: scale(1.15) translate3d(-1.2%, -1.2%, 0); }
+}
+.kenburns {
+  animation: kenburns 18s ease-in-out infinite alternate;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translate3d(0, 16px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+.fade-up { animation: fadeUp 900ms ease-out both; }
+.fade-up-1 { animation-delay: 80ms; }
+.fade-up-2 { animation-delay: 220ms; }
+.fade-up-3 { animation-delay: 360ms; }
+.fade-up-4 { animation-delay: 500ms; }
+
+@keyframes slideLine {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.slide-line { animation: slideLine 1.2s cubic-bezier(0.65, 0, 0.35, 1) both; transform-origin: left; }
