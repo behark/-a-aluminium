@@ -1,8 +1,8 @@
 const projects = [
   {
-    src: "/images/gallery/01-dyer-druri.jpg",
-    alt: "Derë hyrëse druri me profil alumini",
-    label: "Banesë private · Derë hyrëse",
+    src: "/images/gallery/13-vile-naten.jpg",
+    alt: "Vilë luksoze me dritare alumini fotografuar natën",
+    label: "Vilë · Dritare & Dyer",
   },
   {
     src: "/images/gallery/02-shtepi-moderne.jpg",
@@ -10,14 +10,9 @@ const projects = [
     label: "Shtëpi · Gilindera & Derë",
   },
   {
-    src: "/images/gallery/03-profile-rehau.jpg",
-    alt: "Profile origjinale REHAU gati për montim",
-    label: "Prodhim · Profile REHAU",
-  },
-  {
-    src: "/images/gallery/04-dyer-alumini.jpg",
-    alt: "Dyer alumini në prodhim dhe të montuara",
-    label: "Dyer · Prodhim & Montim",
+    src: "/images/gallery/12-dyer-dyfish.jpg",
+    alt: "Dyer alumini të dyfishta antracit me xham",
+    label: "Banesë · Dyer të dyfishta",
   },
   {
     src: "/images/gallery/05-vitrina-fibello.jpg",
@@ -25,19 +20,44 @@ const projects = [
     label: "Vitrina · Objekt komercial",
   },
   {
+    src: "/images/gallery/11-dyer-e-bardhe.jpg",
+    alt: "Derë hyrëse e bardhë elegante me xham",
+    label: "Banesë · Derë elegante",
+  },
+  {
     src: "/images/gallery/06-dyer-moderne.jpg",
-    alt: "Derë moderne alumini e instaluar",
+    alt: "Derë moderne alumini antracit e instaluar",
     label: "Banesë · Derë moderne",
   },
   {
-    src: "/images/gallery/07-gilindera.jpg",
-    alt: "Gilindera alumini të instaluara",
-    label: "Banesë · Gilindera",
+    src: "/images/gallery/15-fasade-industriale.jpg",
+    alt: "Fasadë industriale me dritare të mëdha xhami",
+    label: "Objekt · Fasadë industriale",
   },
   {
-    src: "/images/gallery/08-objekt-komercial.jpg",
-    alt: "Fasadë xhami për objekt komercial",
-    label: "Objekt · Fasadë xhami",
+    src: "/images/gallery/10-shkalle-xham.jpg",
+    alt: "Mbrojtëse shkallësh prej xhami",
+    label: "Brendësi · Xham shkallësh",
+  },
+  {
+    src: "/images/gallery/09-shtepi-xham.jpg",
+    alt: "Shtëpi moderne me dritare rrëshqitëse të mëdha",
+    label: "Vilë · Dritare rrëshqitëse",
+  },
+  {
+    src: "/images/gallery/18-para-pas.jpg",
+    alt: "Transformim fasade - para dhe pas",
+    label: "Renovim · Para & Pas",
+  },
+  {
+    src: "/images/gallery/19-lagje-vilash.jpg",
+    alt: "Lagje vilash moderne me dritare alumini",
+    label: "Kompleks · Vilash moderne",
+  },
+  {
+    src: "/images/gallery/16-rehau-profil.jpg",
+    alt: "Profile REHAU cilësore me ngjyra të ndryshme",
+    label: "Partner · REHAU Quality",
   },
 ];
 
@@ -62,9 +82,9 @@ export default function Gallery() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-1">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-1.5">
           {projects.map((p) => (
-            <div key={p.alt} className="group relative overflow-hidden aspect-[4/3]">
+            <div key={p.alt} className="group relative overflow-hidden aspect-square sm:aspect-[4/3]">
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                 style={{ backgroundImage: `url('${p.src}')` }}
