@@ -20,16 +20,29 @@ export default function Location() {
             </div>
             <div className="border-t border-ink pt-6">
               <div className="eyebrow mb-2">Telefon</div>
-              <a href="tel:+38349323381" className="text-ink hover:text-primary transition-colors">
-                +383 49 323 381
-              </a>
+              <div className="space-y-1">
+                <a href="tel:+38349323381" className="block text-ink hover:text-primary transition-colors">
+                  +383 49 323 381
+                </a>
+                <a href="tel:+38349445103" className="block text-ink hover:text-primary transition-colors">
+                  +383 49 445 103
+                </a>
+              </div>
             </div>
             <div className="border-t border-ink pt-6">
               <div className="eyebrow mb-2">Orari</div>
               <div className="text-ink/75 space-y-1">
                 <div className="flex justify-between">
-                  <span>E përditshme</span>
+                  <span>Hënë – Premte</span>
                   <span className="tabular-nums">08:00 – 20:00</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Shtunë</span>
+                  <span className="tabular-nums">08:00 – 18:00</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Diel</span>
+                  <span className="text-ink/45">Mbyllur</span>
                 </div>
               </div>
             </div>
@@ -45,12 +58,12 @@ export default function Location() {
                   Instagram
                 </a>
                 <a
-                  href="https://www.instagram.com/aluminium.shpk"
+                  href="https://wa.me/38349323381"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-ink hover:text-primary transition-colors"
                 >
-                  Instagram
+                  WhatsApp
                 </a>
               </div>
             </div>

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const navLinks = [
   { href: "#sherbime", label: "Shërbime" },
+  { href: "#projekte", label: "Projekte" },
   { href: "#rreth", label: "Rreth nesh" },
   { href: "#lokacion", label: "Lokacion" },
   { href: "#kontakt", label: "Kontakt" },
@@ -21,11 +22,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
           ? "bg-[#0B0B0D]/95 backdrop-blur-md border-b border-white/10"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
@@ -75,19 +75,16 @@ export default function Navbar() {
           >
             <div className="space-y-1.5">
               <span
-                className={`block w-6 h-px transition-all bg-white ${
-                  mobileOpen ? "rotate-45 translate-y-2" : ""
-                }`}
+                className={`block w-6 h-px transition-all bg-white ${mobileOpen ? "rotate-45 translate-y-2" : ""
+                  }`}
               />
               <span
-                className={`block w-6 h-px transition-all bg-white ${
-                  mobileOpen ? "opacity-0" : ""
-                }`}
+                className={`block w-6 h-px transition-all bg-white ${mobileOpen ? "opacity-0" : ""
+                  }`}
               />
               <span
-                className={`block w-6 h-px transition-all bg-white ${
-                  mobileOpen ? "-rotate-45 -translate-y-2" : ""
-                }`}
+                className={`block w-6 h-px transition-all bg-white ${mobileOpen ? "-rotate-45 -translate-y-2" : ""
+                  }`}
               />
             </div>
           </button>

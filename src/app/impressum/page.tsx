@@ -8,7 +8,7 @@ export default function Impressum() {
           href="/"
           className="text-primary hover:text-primary-dark font-semibold mb-8 inline-block"
         >
-          &larr; Zurück zur Startseite
+          &larr; Kthehu në faqen kryesore
         </Link>
         <h1 className="text-4xl font-bold font-[family-name:var(--font-playfair)] text-accent mb-8">
           Impressum
@@ -17,19 +17,23 @@ export default function Impressum() {
         <div className="prose prose-lg text-gray-700 space-y-6">
           <section>
             <h2 className="text-xl font-bold text-accent">
-              Angaben gemäß &sect; 5 ECG
+              Informata sipas ligjit
             </h2>
             <p>
-              Aluminium
+              A Aluminium SH.P.K.
               <br />
-              Kontaktoni për adresën
+              46 Dëshmorët e Kombit
+              <br />
+              40000 Mitrovicë, Kosovë
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-accent">Kontakt</h2>
+            <h2 className="text-xl font-bold text-accent">Kontakti</h2>
             <p>
               Telefon: +383 49 323 381
+              <br />
+              Telefon: +383 49 445 103
               <br />
               WhatsApp:{" "}
               <a
@@ -38,28 +42,37 @@ export default function Impressum() {
               >
                 +383 49 323 381
               </a>
+              <br />
+              Instagram:{" "}
+              <a
+                href="https://www.instagram.com/aluminium.shpk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary-dark"
+              >
+                @aluminium.shpk
+              </a>
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold text-accent">
-              Haftungsausschluss
+              Kufizimi i përgjegjësisë
             </h2>
             <p>
-              Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt.
-              Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
-              können wir jedoch keine Gewähr übernehmen.
+              Përmbajtjet e kësaj faqe interneti janë krijuar me kujdes të madh.
+              Megjithatë, nuk mund të garantojmë saktësinë, plotësinë dhe
+              aktualitetin e përmbajtjeve.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-accent">Urheberrecht</h2>
+            <h2 className="text-xl font-bold text-accent">Të drejtat e autorit</h2>
             <p>
-              Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
-              diesen Seiten unterliegen dem österreichischen Urheberrecht. Die
-              Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
-              Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
-              schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+              Përmbajtjet dhe veprat e krijuara nga operatorët e kësaj faqe
+              mbrohen nga e drejta e autorit. Riprodhimi, përpunimi, shpërndarja
+              dhe çdo lloj përdorimi jashtë kufijve të së drejtës së autorit
+              kërkojnë pëlqimin me shkrim.
             </p>
           </section>
         </div>
